@@ -1,0 +1,113 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 165px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.headerSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.socialContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.headerTextSection p {
+    text-align: end;
+}
+.logo {
+    position: absolute;
+    top: 0.2rem;
+    margin-left: 2.5rem;
+    z-index: 2;
+}
+
+.headerTextSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.3rem 1rem;
+}
+.headerTextSection p {
+    margin-right: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #114b5f;
+}
+.headerTextSection span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8ac6d1;
+}
+.sideBarContainer {
+    display: none;
+}
+@media screen and (max-width: 1330px) {
+    .headerTextSection p {
+        padding-left: 10rem;
+    }
+}
+@media screen and (max-width: 1154px) {
+    .headerTextSection {
+        display: none;
+    }
+    .sideBarContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .sideBarButtons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80px;
+        padding: 1rem 4rem;
+        margin-top: 2rem;
+        height: 100%;
+    }
+    .socialContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .headerContainer {
+        display: flex;
+        min-height: 150px;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .sideBarButtons {
+        padding: 1rem 2rem;
+    }
+    .logo {
+        margin-left: 1rem;
+    }
+}

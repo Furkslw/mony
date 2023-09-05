@@ -1,0 +1,54 @@
+const categories = [
+    {
+        name: "home",
+        label: "Home",
+        width: 21,
+        height: 20,
+        imageSrc: "/home.png",
+    },
+    {
+        name: "popular",
+        label: "Popular",
+        width: 22,
+        height: 19,
+        imageSrc: "/popular.png",
+    },
+    { name: "IO", label: "IO", width: 21, height: 23, imageSrc: "/IO.png" },
+    { name: "gun", label: "Gun", width: 27, height: 21, imageSrc: "/gun.png" },
+    {
+        name: "girls",
+        label: "Girls",
+        width: 16,
+        height: 19,
+        imageSrc: "/girls.png",
+    },
+    {
+        name: "racing",
+        label: "Racing",
+        width: 23,
+        height: 18,
+        imageSrc: "/racing.png",
+    },
+    {
+        name: "sports",
+        label: "Sports",
+        width: 20,
+        height: 20,
+        imageSrc: "/sports.png",
+    },
+];
+
+const games = [
+    {
+        slug: "among_us",
+        title: "Among Us",
+        imageSrc: "/among-us.png",
+        iframeUrl:
+            "https://html5.gamedistribution.com/c7a11f86eeda4a2b88e8d5ad2ba2f41d/?gd_sdk_referrer_url=https://gamedistribution.com/games/only-up-3d-parkour-go-ascend",
+        category: ["IO", "popular"],
+        description:
+            "Among Us is an online multiplayer social deduction game developed and published by American game studio InnerSloth and released on June 15, 2018. The game takes place in a space-themed setting where players each take on one of two roles, most being Crewmates, and a predetermined number being Impostors.",
+    },
+];
+
+export { categories };

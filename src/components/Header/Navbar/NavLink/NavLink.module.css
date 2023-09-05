@@ -1,0 +1,23 @@
+.image {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.navLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navLink p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 1670px) {
+    .image {
+        width: 18px;
+        height: 18px;
+    }
+}
