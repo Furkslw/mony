@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Input.module.css";
 import Link from "next/link";
+import { useState } from "react";
 
 const Input = () => {
-    const [inputValue, setInputValue] = React.useState("");
+    const [inputValue, setInputValue] = useState("");
 
     const handleSearchClick = () => {
         console.log("Arama gerçekleştirildi");
