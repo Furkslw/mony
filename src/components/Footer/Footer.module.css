@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.footerLeft {
+    flex: 1;
+}
+
+.footerLeft img {
+    max-width: 350px;
+    height: auto;
+}
+
+.footerLogo {
+    max-width: 100px;
+    height: auto;
+}
+
+.footerRight {
+    margin-top: 20px; /* Boşluk eklemek isterseniz */
+}
+
+.footerRight a {
+    text-decoration: none;
+    color: #114a11;
+    font-size: 14px;
+    padding: 0 2rem;
+    margin-bottom: 10px; /* Boşluk eklemek isterseniz */
+}
+
+.footerBottom {
+    text-align: center;
+    color: #114a11;
+    padding: 10px 0;
+}
+
+.footerBottom p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}

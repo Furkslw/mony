@@ -4,6 +4,7 @@ import Image from "next/image";
 import Input from "../Input/Input";
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Navbar/SideBar/SideBar";
+import SearchModal from "../SearchModal/SearchModal";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -58,6 +59,12 @@ const Header = () => {
                                 onClick={toggleSearchModal}
                             />
                         </div>
+                        {isSearchModalOpen && (
+                            <SearchModal
+                                toggleSearchModal={toggleSearchModal}
+                                isSearchModalOpen={isSearchModalOpen}
+                            />
+                        )}
                         {isSidebarOpen && (
                             <Sidebar
                                 toggleSidebar={toggleSidebar}

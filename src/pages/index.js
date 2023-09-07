@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "@/components/Header/Header";
 import HomeGrid from "@/components/HomeGrid/HomeGrid";
 import CategoryCard from "@/components/CategoryCard/CategoryCard";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             </Head>
             <Header />
             <HomeGrid />
+            <Footer />
         </>
     );
 }

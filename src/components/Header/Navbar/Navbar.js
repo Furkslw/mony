@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import NavLink from "./NavLink/NavLink";
-import { categories } from "../../../data/mockData"; // Verileri içe aktarıyoruz
+import { categories } from "../../../data/mockData";
 
 const Navbar = () => {
     return (
@@ -10,13 +10,17 @@ const Navbar = () => {
                 <ul className={styles.navList}>
                     {categories.map((category, index) => (
                         <li className={styles.navItem} key={index}>
-                            <NavLink
-                                href={`/category/${category.name}`}
-                                label={category.label}
-                                imageSrc={category.imageSrc}
-                                width={category.width}
-                                height={category.height}
-                            />
+                            {category.name === "home" ? (
+                                <NavLink href="/" label={category.label} />
+                            ) : (
+                                <NavLink
+                                    href={`/category/${category.name}`}
+                                    label={category.label}
+                                    imageSrc={category.imageSrc}
+                                    width={category.width}
+                                    height={category.height}
+                                />
+                            )}
                         </li>
                     ))}
                 </ul>

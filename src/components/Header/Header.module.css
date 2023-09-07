@@ -68,9 +68,6 @@
     }
 }
 @media screen and (max-width: 1154px) {
-    .headerTextSection {
-        display: none;
-    }
     .sideBarContainer {
         display: flex;
         flex-direction: row;
@@ -85,7 +82,7 @@
         justify-content: space-between;
         width: 80px;
         padding: 1rem 4rem;
-        margin-top: 2rem;
+
         height: 100%;
     }
     .socialContainer {
@@ -101,6 +98,71 @@
         height: 100%;
         justify-content: space-between;
         align-items: center;
+    }
+}
+@media screen and (max-width: 950px) {
+    .headerTextSection p {
+        padding-left: 6rem;
+        font-size: 14px;
+    }
+    .sideBarButtons {
+        padding: 1rem 2rem;
+        margin: 0;
+    }
+
+    .headerTextSection span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerTextSection p {
+        padding-left: 4rem;
+        font-size: 12px;
+    }
+    .sideBarButtons {
+        padding: 0 2rem 2rem 0;
+        margin-top: 2rem;
+    }
+    .headerTextSection span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .headerTextSection p {
+        padding-left: 8rem;
+        font-size: 10px;
+    }
+
+    .headerTextSection span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .headerTextSection p {
+        padding-left: 8rem;
+
+        font-size: 10px;
+    }
+    .headerTextSection {
+        padding-right: 0;
+    }
+    .sideBarButtons {
+        padding: 0 1rem 1rem 0;
+    }
+    .headerTextSection span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headerTextSection {
+        display: none;
+    }
+    .sideBarButtons {
+        padding: 0 3rem 2rem 2rem;
     }
 }
 @media screen and (max-width: 450px) {

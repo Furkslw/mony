@@ -7,8 +7,8 @@
     gap: 10px;
     width: 330px;
     height: 330px;
-    background: #114b5f;
-    border: 3px solid #fff;
+    background: white;
+    border: 3px solid #114b5f;
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer;
@@ -28,13 +28,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #114b5f;
     font-size: 24px;
     width: 100%;
     max-height: 63px;
     gap: 10px;
     border-radius: 5px 5px 0 0;
-    color: #114b5f;
+    color: white;
 }
 
 .gameGridItems {
@@ -43,10 +43,10 @@
     display: grid;
     grid-template-columns: repeat(3, 98px);
     grid-auto-rows: 98px;
-    margin-top: 2.5rem;
-    gap: 15.37px;
+
+    gap: 10px;
     width: 100%;
-    height: 518px;
+    height: 100%;
     padding: 10px;
 }
 .gridContainer {
@@ -73,7 +73,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
-    padding: 4px 0;
+    padding: 5px 0;
     font-size: 14px;
     border-radius: 0 0 10px 10px;
     opacity: 0;
@@ -113,10 +113,11 @@
     .gameGridItems {
         grid-template-columns: repeat(3, 80px);
         grid-auto-rows: 80px;
+        padding: 0 10px;
+        margin: 0;
         gap: 10px;
         width: 100%;
-        height: 518px;
-        padding: 10px;
+        height: 100%;
     }
     .gameGridItems img {
         max-width: 80px;

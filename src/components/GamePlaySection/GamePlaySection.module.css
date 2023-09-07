@@ -1,0 +1,47 @@
+.gamePlaySectionGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 1100px;
+}
+
+.gamePlaySectionGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 550px;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.gamePlaySectionTitleGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gamePlaySectionTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+.gamePlaySectionDescription {
+    background-color: #1a936f;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}

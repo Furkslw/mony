@@ -1,0 +1,80 @@
+/* SearchModal.module.css */
+
+.modal {
+    position: fixed;
+    top: 0;
+    width: 70%; /* Yüzde 70 genişlik */
+    height: 100vh; /* Ekran yüksekliği kadar */
+    background-color: #0e624a;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    color: white;
+}
+
+.modalContent {
+    width: 100%;
+    max-width: 400px; /* Maksimum genişlik ayarı */
+    margin: 0 auto;
+    position: relative; /* İçerik ile kapatma düğmesi hizalaması */
+}
+.searchBar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.closeButton {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    margin-bottom: 20px;
+}
+
+.resultsTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.resultGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    grid-gap: 10px;
+}
+
+.defaultGamesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    grid-template-rows: repeat(6, 1fr); /* 6 satır */
+    gap: 10px;
+}
+
+.noResults {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+}

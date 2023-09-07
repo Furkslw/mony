@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.titleSection {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.titleSection h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #114b5f;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.gridGameSection {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(9, 110px);
+    grid-auto-rows: 110px;
+    gap: 10px;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1300px) {
+    .gridGameSection {
+        grid-template-columns: repeat(8, 110px);
+    }
+    .titleSection {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .gridGameSection {
+        grid-template-columns: repeat(7, 110px);
+    }
+    .titleSection {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gridGameSection {
+        grid-template-columns: repeat(6, 110px);
+    }
+    .titleSection {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gridGameSection {
+        grid-template-columns: repeat(5, 110px);
+    }
+    .titleSection {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gridGameSection {
+        grid-template-columns: repeat(4, 110px);
+    }
+    .titleSection {
+        padding: 1rem 0;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .titleSection h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gridGameSection {
+        grid-template-columns: repeat(3, 90px);
+        grid-auto-rows: 90px;
+    }
+    .titleSection {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .titleSection h1 {
+        font-size: 2rem;
+    }
+}

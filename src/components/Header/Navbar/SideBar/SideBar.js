@@ -26,14 +26,24 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                 </div>
                 <ul>
                     {categories.map((category) => (
-                        <li key={category.name} className={styles.navItem}>
-                            <NavLink
-                                href={`/category/${category.name}`}
-                                imageSrc={category.imageSrc}
-                                width={category.width}
-                                height={category.height}
-                                label={category.label}
-                            />
+                        <li className={styles.navItem} key={category.name}>
+                            {category.name === "home" ? (
+                                <NavLink
+                                    href="/"
+                                    label={category.label}
+                                    imageSrc={category.imageSrc}
+                                    width={category.width}
+                                    height={category.height}
+                                />
+                            ) : (
+                                <NavLink
+                                    href={`/category/${category.name}`}
+                                    label={category.label}
+                                    imageSrc={category.imageSrc}
+                                    width={category.width}
+                                    height={category.height}
+                                />
+                            )}
                         </li>
                     ))}
                 </ul>
